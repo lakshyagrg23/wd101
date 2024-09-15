@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container form">
+    <form id="user-form">
+        <div class="bg-white">
+            <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
+            <div class="mx-auto max-w-2xl">
+        
+                <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"></div>
+
+                  <div class="sm:col-span-3 mb-3">
+                    <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
+                    <div class="mt-2">
+                      <input type="text" placeholder="Enter Full Name" name="name" id="name" required autocomplete="given-name" class="block w-full rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+
+                  <div class="sm:col-span-4 mb-3">
+                    <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+                    <div class="mt-2">
+                      <input id="email" placeholder="Enter Email" name="email" type="email" required autocomplete="email" class="block w-full rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+
+                  <div class="sm:col-span-4 mb-3">
+                    <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                    <div class="mt-2">
+                      <input id="password" placeholder="Enter Password" name="password" type="password" required autocomplete="new-password" class="block w-full rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+
+                  <div class="sm:col-span-4 mb-3">
+                    <label for="dob" class="block text-sm font-medium leading-6 text-gray-900">Date of Birth</label>
+                    <div class="mt-2">
+                      <input id="dob" name="dob" type="date" required autocomplete="bday" class="block w-full rounded-md border-0 px-4 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                  </div>
+
+                  <div class="sm:col-span-4 mb-3">
+                    <div class="flex items-start">
+                      <div class="flex h-6 items-center">
+                        <input id="terms" name="terms" type="checkbox" required class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600">
+                      </div>
+                      <div class="ml-3 text-sm leading-6">
+                        <label for="terms" class="font-medium text-gray-900">Accept Terms and Conditions</label>
+                      </div>
+                    </div>
+                  </div>
+                <div class="sm:col-span-6 mb-5"></div>
+                    <button type="submit" class="w-full inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        Submit
+                    </button>
+                </div>
+                </div>
+            </div>     
+            </div>
+        </div>
+    </form>
+    </div>
+    <div>
+      <h2 class="text-4xl font-bold text-center pb-8 mr-8">Entries</h2>
+    <div class="container table" id="user-entries">
+        
+    </div>
+    <div class="pb-8"></div>
+  </div>
+<script src="./index.js"></script>
+</body>
+</html>
